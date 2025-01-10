@@ -1,0 +1,158 @@
+/*기본 설정*/
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Nanum Pen Script', serif;
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/*헤더 */
+header {
+    color: #4CAF50;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+/*네비게이션 스타일링*/
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #333;
+    margin: 0;
+    padding: 1rem 0;
+    gap: 8rem;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/*공통*/
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 3rem;
+}
+
+/*프로젝트*/
+.project a {
+    color: #007bff;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project h3 {
+    font-size: 2.7rem;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    font-weight: normal;
+}
+
+/*소개 섹션 스타일링*/
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.about-details {
+    line-height: 1.8;
+    font-size: 1.5rem;
+}
+
+.about-details p {
+    margin: 0.5rem 0;
+}
+
+.about-details a {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.about-details a:hover {
+    text-decoration: underline;
+}
+
+/*스킬 */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 2rem;
+}
+
+.skills-list li {
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== 푸터 스타일링 ===== */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+footer h2 {
+    color: #ffffff;
+}
+
+#contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer a {
+    color: #4CAF50;
+}
+footer a:hover {
+    text-decoration: underline;
+}
