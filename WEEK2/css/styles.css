@@ -10,11 +10,14 @@
     grid-column: span 4;
     text-align: right;
     padding: 10px;
-    background-color: #eaeaea; /* 간단한 시각적 구분을 위해 */
+    background-color: #eaeaea;
 }
 
 .button {
-    padding: 15px;
-    text-align: center;
-    background-color: #f9f9f9; /* 버튼 구분을 위해 */
+    width: 50px; /* 고정된 너비 */
+    height: 50px; /* 고정된 높이 */
+    display: flex; /* 텍스트 가운데 정렬 */
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
 }
