@@ -1,0 +1,20 @@
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    width: 200px;
+    margin: 50px auto;
+}
+
+.display {
+    grid-column: span 4;
+    text-align: right;
+    padding: 10px;
+    background-color: #eaeaea; /* 간단한 시각적 구분을 위해 */
+}
+
+.button {
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9; /* 버튼 구분을 위해 */
+}
