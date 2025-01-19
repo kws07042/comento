@@ -1,23 +1,36 @@
 .calculator {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    width: 200px;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    width: 250px;
     margin: 50px auto;
 }
 
 .display {
-    grid-column: span 4;
     text-align: right;
-    padding: 10px;
+    padding: 15px;
     background-color: #eaeaea;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+.btn_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
 }
 
 .button {
-    width: 50px;
+    width: 100%;
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 18px;
     background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.button img {
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
 }
