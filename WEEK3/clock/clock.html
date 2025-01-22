@@ -1,0 +1,40 @@
+  <!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알람</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+  <div class="battery-container">
+    <span id="battery-level"></span>
+  </div>
+
+  <div class="flex-container">
+    <div class="clock-container">
+      <h2>시간</h2>
+      <div id="time-display">yyyy-mm-dd hh:mm:ss</div>
+    </div>
+
+    <div class="alarm-status">
+      <h2>알람 현황</h2>
+      <ul id="alarm-list"></ul>
+    </div>
+  </div>
+
+  <div class="alarm-container">
+    <h2>알람 설정</h2>
+    <input type="number" id="hours" placeholder="시간" min="0" max="23">
+    <input type="number" id="minutes" placeholder="분" min="0" max="59">
+    <input type="number" id="seconds" placeholder="초" min="0" max="59">
+    <button id="add-alarm">알람 추가</button>
+    <button id="restart">재시작</button>
+  </div>
+
+
+
+  <script src="assets/js/script.js"></script>
+  </body>
+
+  </html>
