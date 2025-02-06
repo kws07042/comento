@@ -1,0 +1,136 @@
+/*전체 배경 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #a8e063, #56ab2f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*투두리스트 전체 감싸는 컨테이너 */
+.todo-container {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    max-height: 400px;
+}
+
+/* 제목 */
+.todo-container h1 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+/* 날짜 표시 */
+#current-date {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* 입력 영역 */
+.input-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/* 할일 입력 영영*/
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #56ab2f;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+#add-btn {
+    padding: 0 15px;
+    font-size: 1rem;
+    background-color: #56ab2f;
+    color: #fff;
+    border: 2px solid #56ab2f;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #41991f;
+}
+
+/* 할 일 아이템 */
+.todo-item {
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    justify-content: space-between;
+    border: 2px solid #56ab2f;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+/* 할 일 텍스트 */
+.todo-item span {
+    flex: 1;
+    text-align: left;
+}
+
+/* 체크박스 스타일 */
+.todo-checkbox {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* 완료된 할 일 스타일 */
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* 삭제 버튼 */
+.delete-btn {
+    background-color: #ff5c5c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #e63939;
+}
+
+/* 스크롤바  */
+#todo-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+}
+
