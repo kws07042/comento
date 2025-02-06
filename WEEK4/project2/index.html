@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="signup-container">
+    <h1>회원가입</h1>
+
+    <!-- 아이디 중복 체크 필드 -->
+    <div class="input-area with-btn">
+        <input type="text" id="user-id" placeholder="아이디를 입력하세요">
+        <button id="check-id-btn">중복 확인</button>
+    </div>
+
+    <!-- 비밀번호 입력 필드 -->
+    <div class="input-area no-btn">
+        <input type="password" id="user-password" placeholder="비밀번호를 입력하세요">
+    </div>
+
+    <!-- 비밀번호 확인 필드 -->
+    <div class="input-area no-btn">
+        <input type="password" id="confirm-password" placeholder="비밀번호 확인">
+    </div>
+
+    <!-- 이메일 입력 필드 -->
+    <div class="input-area no-btn">
+        <input type="email" id="user-email" placeholder="이메일을 입력하세요">
+    </div>
+
+    <!-- 회원가입 버튼 (필요에 따라 추가) -->
+    <button id="signup-btn">회원가입</button>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
